@@ -1,0 +1,18 @@
+
+<div class="card">
+<a href="./Servlet1">Servlet1</a>
+
+<button (click)="getTrees()">Get Trees</button>
+
+<ul>
+  <li *ngFor="let ani of treesList">
+    Title: {{ani.title}}
+  </li>
+  <li *ngFor="let ani of treesList">
+    Age: {{ani.age}} years
+  </li>
+  <li *ngFor="let ani of treesList">
+    Info: {{ani.info}}
+  </li>
+  <li><img src="assets/Dub.jpg" (click)="getTrees()"></li>
+</ul>
