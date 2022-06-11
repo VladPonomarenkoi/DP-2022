@@ -1,0 +1,9 @@
+
+<form #form2="ngForm" (ngSubmit)="updateTrees(form2.value)" class="updform">
+    <div class="rmform" *ngFor="let a of TreesList">
+        <input type="radio" name="id" value="{{a.id}}" ngModel> <label for="id">{{a.title}}</label>
+    </div>
+    <input type="text" placeholder="Name of the Tree" name="title" ngModel>
+    <input type="number" min="1" max="5000" placeholder="Age of the Tree" name="age" ngModel>
+    <input type="text" placeholder="Info of the Tree" name="info" ngModel>
+    <input type="submit" class="addbutton" value="Update Tree!">
