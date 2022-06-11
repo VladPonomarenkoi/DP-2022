@@ -1,0 +1,12 @@
+<div class="updform" *ngFor="let a of treesList">
+    <div class="double"><h3>{{a.title}}</h3><button class="selectbutton" (click)="onSelect(a)">Select!</button></div>
+</div>
+<div *ngIf="selectedItem">
+
+<form #form2="ngForm" (ngSubmit)="updateRest(form2.value)" class="updform">
+    <input type="text" placeholder="Name of the Tree" name="title" ngModel="{{selectedItem.title}}">
+    <input type="number" min="1" max="5000" placeholder="Age of the Tree" name="age" ngModel="{{selectedItem.age}}">
+    <input type="text" placeholder="Info of the Tree" name="info" ngModel="{{selectedItem.info}}">
+    <input type="submit" class="addbutton" value="Update Tree!">
+</form>
+</div>

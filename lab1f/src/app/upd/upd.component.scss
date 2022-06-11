@@ -1,0 +1,13 @@
+.updform{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 10px;
+    input{
+        margin: 10px;
+    }
+}
+.double{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}

@@ -1,0 +1,26 @@
+<div class="line"></div>
+<div class="gr">
+
+<img src="assets/Dub.jpg" (click)="getRest()">
+<div class="one" *ngFor="let a of TreesList">
+    <h1>{{a.title}}</h1>
+    <h2>{{a.age}}</h2>
+    <h2>{{a.info}}</h2>
+</div>
+</div>
+<a href="http://localhost:1155/treeses">Servlet</a>
+<div class="line"></div>
+<div class="gr2">
+    <div class="add">
+        <div class="addbtn" (click)="getRest()">Add Tree!</div>
+        <div class="add-hidden" id="add-hidden"><app-add></app-add></div>
+    </div>
+    <div class="update">
+        <div class="updbtn" (click)="getRest()">Update Tree!</div>
+        <div class="upd-hidden" id="upd-hidden"><app-upd></app-upd></div>
+    </div>
+    <div class="remove">
+        <div class="rmbtn" (click)="getRest()"> Remove Tree!</div>
+        <div class="rm-hidden" id="rm-hidden"><app-rm></app-rm></div>
+    </div>
+</div>
